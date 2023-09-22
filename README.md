@@ -2,13 +2,13 @@
 Looking to bulk remove tags from your repository? Git Tag Manager streamlines the process of cleaning up and managing your Git tags. Tailored for developers and maintainers looking to declutter their repositories, our utility aids in the removal of specific tags or ranges, ensuring a clean and organized versioning system.
 
 ### Key Features:
-- **Range-Based Purging:** Easily specify a range of tags for bulk removal.
+- **Range-Based Removing:** Easily specify a range of tags for bulk removal.
 - **Safety First:** Test-run feature to see the tags that would be removed, ensuring no accidental deletions.
 - **Remote Cleanup:** Option to push changes to remote repositories, making tag management seamless across teams.
 ### Benefits:
 - **Optimized Repositories:** Clean up obsolete tags and maintain a polished versioning system.
 - **Enhanced Collaboration:** Provides team members with a clearer picture by removing cluttered and unnecessary tags.
-- **Time Efficiency**: Instead of manually deleting tags one by one, use Git Tag Purger to automate the process.
+- **Time Efficiency**: Instead of manually deleting tags one by one, use Git Tag Manager to automate the process.
 
 ## Usage:
 ```bash
