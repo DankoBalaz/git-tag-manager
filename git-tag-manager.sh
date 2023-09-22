@@ -22,6 +22,12 @@ if ! git rev-parse "$END_TAG" >/dev/null 2>&1; then
     exit 1
 fi
 
+# Ensure START_TAG is less than END_TAG
+if ! echo -e "$START_TAG\n$END_TAG" | sort -Vc 2>/dev/null; then
+    echo "Error: $START_TAG is not less than $END_TAG!"
+    exit 1
+fi
+
 # Store tags to be deleted in a variable
 TAGS_TO_DELETE=$(git tag | sort -V | awk -v start="$START_TAG" -v end="$END_TAG" 'start <= $0 && $0 <= end')
 
